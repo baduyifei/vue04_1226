@@ -3,10 +3,8 @@
 <template>
 	<div>
 		<h1>列表</h1>
-		<cpt4 title="vue" price="11" count="11"></cpt4>
-		<cpt4 title="react" price="22" count="22"></cpt4>
-		<cpt4 title="js" price="33" count="33"></cpt4>
-		<cpt4 title="html" price="44" count="44"></cpt4>
+
+		<cpt4 v-for="(item, i) in list" :key="i" :title="item.uutitle" :price="item.uuprice" :count="item.uucount"></cpt4>
 	</div>
 </template>
 
@@ -19,7 +17,23 @@
 		},
 		data() {
 			return {
-				uname: '张三',
+				list: [
+					{
+						uutitle: 'ChristmasDay11',
+						uuprice: '11',
+						uucount: '11',
+					},
+					{
+						uutitle: 'ChristmasDay22',
+						uuprice: '22',
+						uucount: '22',
+					},
+					{
+						uutitle: 'ChristmasDay33',
+						uuprice: '33',
+						uucount: '33',
+					},
+				],
 			};
 		},
 		methods: {
