@@ -1,28 +1,48 @@
+<!-- @format -->
+
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+	<div>
+		<h1>hello</h1>
+		<div class="box">
+			<h3>
+				芙蓉路送辛弃疾
+				<button @click="showAndHide = !showAndHide">{{ showAndHide ? '折叠' : '展开' }}</button>
+			</h3>
+			<ul v-show="showAndHide">
+				<li>11111111111111</li>
+				<li>22222222222222</li>
+				<li>3333333333333333</li>
+				<li>44444444444444</li>
+			</ul>
+		</div>
+	</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+	export default {
+		data() {
+			return {
+				btn: '折叠',
+				showAndHide: true,
+			};
+		},
+		methods: {
+			fold() {
+				// this.showAndHide = !this.showAndHide;
+				// if (this.btn == '折叠') {
+				// 	this.btn = '展开';
+				// } else if (this.btn == '展开') {
+				// 	this.btn = '折叠';
+				// }
+			},
+		},
+	};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+	.box {
+		width: 300px;
+		height: 300px;
+		background-color: pink;
+	}
 </style>
