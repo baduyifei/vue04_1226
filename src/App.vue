@@ -2,27 +2,20 @@
 
 <template>
 	<div>
-		<!-- 1 -->
-		<cpt1></cpt1>
-		<cpt1></cpt1>
-		<cpt1></cpt1>
-
-		<!-- 2 -->
-		<cpt2></cpt2>
-		<cpt2></cpt2>
-		<cpt2></cpt2>
-		<!-- 3 -->
-		<cpt-3-globol></cpt-3-globol>
+		<h1>列表</h1>
+		<cpt4 title="vue" price="11" count="11"></cpt4>
+		<cpt4 title="react" price="22" count="22"></cpt4>
+		<cpt4 title="js" price="33" count="33"></cpt4>
+		<cpt4 title="html" price="44" count="44"></cpt4>
 	</div>
 </template>
 
 <script>
-	import cpt1 from './components/01-cpt.vue';
-	import cpt2 from './components/02-cpt.vue';
+	import cpt4 from './components/04-cpt.vue';
+
 	export default {
 		components: {
-			cpt1,
-			cpt2,
+			cpt4,
 		},
 		data() {
 			return {
