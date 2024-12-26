@@ -14,6 +14,7 @@
 				<li>3333333333333333</li>
 				<li>44444444444444</li>
 			</ul>
+			<cpt-3-globol></cpt-3-globol>
 		</div>
 	</div>
 </template>

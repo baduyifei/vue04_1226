@@ -2,7 +2,7 @@
 
 <template>
 	<div>
-		<h1>哈哈哈哈</h1>
+		<h1>333全局组件</h1>
 	</div>
 </template>
 

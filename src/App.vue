@@ -11,6 +11,8 @@
 		<cpt2></cpt2>
 		<cpt2></cpt2>
 		<cpt2></cpt2>
+		<!-- 3 -->
+		<cpt-3-globol></cpt-3-globol>
 	</div>
 </template>
 

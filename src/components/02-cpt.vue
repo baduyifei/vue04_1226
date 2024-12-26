@@ -2,7 +2,10 @@
 
 <template>
 	<div>
-		<h1>哈哈哈哈</h1>
+		<div class="box">
+			<h1>哈哈哈哈</h1>
+			<cpt-3-globol></cpt-3-globol>
+		</div>
 	</div>
 </template>
 
@@ -10,4 +13,10 @@
 	export default {};
 </script>
 
-<style></style>
+<style>
+	.box {
+		width: 300px;
+		height: 300px;
+		/* background-color: blue; */
+	}
+</style>
